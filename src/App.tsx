@@ -1,4 +1,3 @@
-import React from 'react';
 import InteractiveClock from './components/InteractiveClock';
 import './index.css';
 

@@ -49,11 +49,6 @@ interface Time {
   minutes: number // 0-59
 }
 
-interface Position {
-  x: number
-  y: number
-}
-
 export default function InteractiveClock() {
   const [time, setTime] = useState<Time>({ hours: 10, minutes: 10 })
   const [isDragging, setIsDragging] = useState<"hour" | "minute" | null>(null)
@@ -83,14 +78,6 @@ export default function InteractiveClock() {
     const currentHourAngle = ((time.hours % 12) * 30 + time.minutes * 0.5) % 360
     prevHourAngleRef.current = currentHourAngle
   }, [time.minutes, time.hours])
-
-  // 角度から時間への変換（時計座標系：12時が0度、時計回りが正）
-  const angleToHour = (angle: number): number => {
-    // 入力角度が時計座標系であることを前提として処理
-    const normalizedAngle = (angle + 360) % 360
-    const hour = Math.round(normalizedAngle / 30) % 12
-    return hour === 0 ? 12 : hour
-  }
 
   const angleToMinute = (angle: number): number => {
     // 入力角度が時計座標系であることを前提として処理

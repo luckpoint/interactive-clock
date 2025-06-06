@@ -1,4 +1,4 @@
-import type { Time, HandPosition } from '../types';
+import type { Time } from '../types';
 
 // 時間を角度に変換（12時を0度として時計回り）
 export const timeToAngle = (time: Time) => {
