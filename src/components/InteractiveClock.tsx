@@ -393,14 +393,14 @@ export default function InteractiveClock() {
 
       {/* デジタル表示 */}
       <div className="bg-white/80 backdrop-blur-md text-gray-800 rounded-2xl p-6 text-center border border-gray-200/50 shadow-lg mb-6">
-        <div className="text-5xl font-light font-mono mb-2 tracking-wider">
+        <div className="text-9xl font-light font-mono mb-2 tracking-wider">
           {displayHour.toString().padStart(2, "0")}:{time.minutes.toString().padStart(2, "0")}
         </div>
         {!is24HourMode && (
-          <div className="text-xl font-light opacity-70 tracking-wide">{isAM ? "AM" : "PM"}</div>
+          <div className="text-3xl font-light opacity-70 tracking-wide">{isAM ? "AM" : "PM"}</div>
         )}
         {is24HourMode && (
-          <div className="text-base font-light opacity-70 tracking-wide">{t.twentyFourHourLabel}</div>
+          <div className="text-xl font-light opacity-70 tracking-wide">{t.twentyFourHourLabel}</div>
         )}
       </div>
 
