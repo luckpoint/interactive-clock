@@ -1,0 +1,8 @@
+name: Disabled workflow (no longer used)
+on:
+  workflow_dispatch:
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This workflow is disabled."
