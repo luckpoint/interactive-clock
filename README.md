@@ -2,6 +2,10 @@
 
 A beautiful, interactive analog clock built with React, TypeScript, and Next.js. You can drag the clock hands to set any time, with full mobile optimization, theme support, and gesture controls.
 
+
+https://github.com/user-attachments/assets/393202b1-7b0a-411c-bfa9-c47304b39cdc
+
+
 ## 🌟 Features
 
 ### 🎮 Interactive Features
